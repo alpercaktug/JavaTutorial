@@ -4,7 +4,9 @@ public class SumDigits {
 
     public static void main(String[] args) {
 
-        sumDigits(11121);
+        //sumDigits(11121);
+        isPalindrome(-111);
+        reverseNumber(-123);
     }
 
     public static int sumDigits(int number){
@@ -14,33 +16,47 @@ public class SumDigits {
             return -1;
         }
         int sum = 0;
-        int count = 0;
-        int tempNumber = number;
 
         System.out.println("Number = " + number);
+
         while (number > 0){
             sum += (number % 10);
             number = number / 10;
-            count++;
         }
-
         System.out.println("Digits Sum = " + sum);
-        reverseNumber(count, tempNumber);
+
         return sum;
     }
 
-    private static void reverseNumber(int digitCount, int number) {
+    private static int reverseNumber(int number) {
 
-        int reverseNumber = 0;
+        number = Math.abs(number);
+
+        int reverse = 0;
 
         while (number > 0){
-            digitCount--;
-            int digits = number % 10;
-            reverseNumber += digits * (Math.pow(10, digitCount));
+            int lastDigit = number % 10;
+            reverse = reverse * 10;
+            reverse += lastDigit;
             number = number / 10;
-
         }
-        System.out.println("Reverse Number = " + reverseNumber);
+
+        //System.out.println(reverse);
+        return reverse;
     }
 
+
+    public static boolean isPalindrome(int number){
+
+        number = Math.abs(number);
+
+        if (number == reverseNumber(number)) {
+            System.out.println(number + " is a Palindrome Number.");
+            return true;
+        }
+        else {
+            System.out.println(number + " is not a Palindrome Number.");
+            return true;
+        }
+    }
 }
