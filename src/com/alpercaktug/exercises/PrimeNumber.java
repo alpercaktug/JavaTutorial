@@ -1,6 +1,10 @@
-package com.alpercaktug;
+package com.alpercaktug.exercises;
 
 public class PrimeNumber {
+
+    public static void main(String[] args){
+        PrimeNumber.findPrimeNumberInRange(100,1000);
+    }
 
     public static boolean isPrime(int n) {
 

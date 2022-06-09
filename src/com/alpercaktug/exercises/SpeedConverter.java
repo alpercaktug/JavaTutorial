@@ -1,6 +1,10 @@
-package com.alpercaktug;
+package com.alpercaktug.exercises;
 
 public class SpeedConverter {
+
+    public static void main(String[] args) {
+        printConversion(100);
+    }
 
     public static long toMilesPerHour(double kilometersPerHour){
 
@@ -24,18 +28,4 @@ public class SpeedConverter {
         }
     }
 
-    public static void printMegaBytesAndKiloBytes(int kiloBytes){
-
-        if (kiloBytes < 0){
-            System.out.println("Invalid value");
-        }
-        else {
-            int megaBytes = kiloBytes / 1024;
-            int remainingKilobytes = kiloBytes % 1024;
-
-            System.out.println(kiloBytes + " KB = " + megaBytes + " MB and " + remainingKilobytes + " KB");
-        }
-
-
-    }
 }

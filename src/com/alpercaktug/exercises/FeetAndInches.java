@@ -1,8 +1,12 @@
-package com.alpercaktug;
+package com.alpercaktug.exercises;
 
 public class FeetAndInches {
 
-    //Method overloading example
+    // Method overloading example
+
+    public static void main(String[] args) {
+        calcFeetAndInchesToCentimeters(100);
+    }
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches){
 
