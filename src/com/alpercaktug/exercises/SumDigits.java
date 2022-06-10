@@ -5,8 +5,9 @@ public class SumDigits {
     public static void main(String[] args) {
 
         //sumDigits(11121);
-        isPalindrome(-111);
-        reverseNumber(-123);
+        //isPalindrome(-111);
+        //reverseNumber(-123);
+        sumFirstAndLastDigit(32145);
     }
 
     public static int sumDigits(int number){
@@ -58,5 +59,21 @@ public class SumDigits {
             System.out.println(number + " is not a Palindrome Number.");
             return true;
         }
+    }
+
+    public static int sumFirstAndLastDigit(int number){
+
+        int sum = 0;
+
+        while (number > 0){
+
+            int digit = number % 10;
+            if(sum == 0 || number < 10){
+                sum += digit;
+            }
+            number = number / 10;
+        }
+        System.out.println(sum);
+        return sum;
     }
 }
