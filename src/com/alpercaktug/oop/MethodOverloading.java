@@ -1,8 +1,6 @@
 package com.alpercaktug.oop;
 
-public class MethodOverloading {
-
-    /*
+/*
     Method overloading is the feature that allows us to have more than one method with same name.
 
     Benefits:
@@ -10,7 +8,9 @@ public class MethodOverloading {
         -It's easier to remember one method name instead of remembering multiple names.
         -Overloaded methods give programmers the flexiblity to call a smiliar method with different types of data.
         -example: println
-     */
+*/
+
+public class MethodOverloading {
 
     public static int calculateScore(String playerName, int score){
         System.out.println( playerName + "'s score = "  + score);
