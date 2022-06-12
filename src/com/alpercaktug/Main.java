@@ -1,23 +1,18 @@
 package com.alpercaktug;
 
 import com.alpercaktug.oop.*;
+import com.alpercaktug.oop.inheritence.Animal;
+import com.alpercaktug.oop.inheritence.Dog;
 
 public class Main {
 
     public static void main(String[] args) {
-        Constructors account = new Constructors();//("1","Alper Çaktuğ", "alpercktg@gmail.com", "0530 090 52 94", 0.0);
-        System.out.println(account.getAccountNumber());
-        System.out.println(account.getCustomerName());
-        System.out.println(account.getPhoneNumber());
-        System.out.println(account.getMail());
+        Animal animal = new Animal("Cat", 1, 12, 13);
 
-        account.deposit(100);
-        account.withdrawal(20);
 
-        System.out.println(account.getBalance());
-
-        Constructors account1 = new Constructors();
-
+        Dog dog = new Dog("Golden", 1,2,4,1,"long");
+        dog.eat();
+        //dog.move();
 
     }
 
