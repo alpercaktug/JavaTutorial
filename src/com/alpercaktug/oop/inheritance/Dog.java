@@ -1,4 +1,4 @@
-package com.alpercaktug.oop.inheritence;
+package com.alpercaktug.oop.inheritance;
 
 public class Dog extends Animal{
 

@@ -1,8 +1,7 @@
 package com.alpercaktug;
 
-import com.alpercaktug.oop.*;
-import com.alpercaktug.oop.inheritence.Animal;
-import com.alpercaktug.oop.inheritence.Dog;
+import com.alpercaktug.oop.inheritance.Animal;
+import com.alpercaktug.oop.inheritance.Dog;
 
 public class Main {
 
