@@ -1,20 +1,25 @@
 package com.alpercaktug;
 
-import com.alpercaktug.oop.inheritance.Animal;
-import com.alpercaktug.oop.inheritance.Dog;
+import com.alpercaktug.oop.exercises.Calculator;
+import com.alpercaktug.oop.exercises.Carpet;
+import com.alpercaktug.oop.exercises.Floor;
 
 public class Main {
 
     public static void main(String[] args) {
-        Animal animal = new Animal("Cat", 1, 12, 13);
-        Dog dog = new Dog("Golden", 1,2,4,1,"long");
 
+        Carpet carpet = new Carpet(3.5);
+        Floor floor = new Floor(2.75, 4.0);
 
-        //animal.eat();
-        //dog.eat();
-        dog.move(10);
-        dog.run();
-        dog.walk();
+        Calculator calculator = new Calculator(floor,carpet);
+
+        System.out.println("Total = " + calculator.getTotalCost());
+
+        carpet = new Carpet(1.5);
+        floor = new Floor(5.4, 4.5);
+        calculator = new Calculator(floor, carpet);
+
+        System.out.println("Total = " + calculator.getTotalCost());
 
     }
 
