@@ -1,4 +1,4 @@
-package com.alpercaktug.oop.exercises;
+package com.alpercaktug.oop.exercise1;
 
 public class Calculator {
 
