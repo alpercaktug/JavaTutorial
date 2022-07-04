@@ -4,6 +4,7 @@ import com.alpercaktug.oop.exercise1.Calculator;
 import com.alpercaktug.oop.exercise1.Carpet;
 import com.alpercaktug.oop.exercise1.Floor;
 import com.alpercaktug.oop.exercise2.Outlander;
+import com.alpercaktug.oop.exercise3.*;
 
 public class Main {
 
@@ -23,14 +24,22 @@ public class Main {
 
         System.out.println("Total = " + calculator.getTotalCost());
 
-
-         */
-
         Outlander outlander = new Outlander(36);
         outlander.steer(45);
         outlander.accelerate(30);
         outlander.accelerate(20);
         outlander.accelerate(-30);
+
+         */
+
+        Case theCase = new Case("200", "Dell", "240", new Dimensions(20, 50, 100));
+        Monitor monitor = new Monitor("300", "HP", 15, new Resolution(10, 10));
+        Motherboard motherboard = new Motherboard("400","Asus",2,4,"AsusBios");
+        PC thePC = new PC(theCase,monitor,motherboard);
+
+        thePC.getTheCase().pressPowerButton();
+        thePC.getMotherboard().loadProgram("Windows");
+        thePC.getMonitor().drawPixelAt(5,4,"White");
     }
 
 }
