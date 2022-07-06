@@ -1,36 +1,20 @@
 package com.alpercaktug;
 
-import com.alpercaktug.oop.exercise1.Calculator;
-import com.alpercaktug.oop.exercise1.Carpet;
-import com.alpercaktug.oop.exercise1.Floor;
-import com.alpercaktug.oop.exercise2.Outlander;
-import com.alpercaktug.oop.exercise3.*;
+import com.alpercaktug.oop.polymorphism.Car;
+import com.alpercaktug.oop.polymorphism.Holden;
+import com.alpercaktug.oop.polymorphism.Kia;
 
 public class Main {
 
     public static void main(String[] args) {
 
         /*
-        Carpet carpet = new Carpet(3.5);
-        Floor floor = new Floor(2.75, 4.0);
-
-        Calculator calculator = new Calculator(floor,carpet);
-
-        System.out.println("Total = " + calculator.getTotalCost());
-
-        carpet = new Carpet(1.5);
-        floor = new Floor(5.4, 4.5);
-        calculator = new Calculator(floor, carpet);
-
-        System.out.println("Total = " + calculator.getTotalCost());
 
         Outlander outlander = new Outlander(36);
         outlander.steer(45);
         outlander.accelerate(30);
         outlander.accelerate(20);
         outlander.accelerate(-30);
-
-         */
 
         Case theCase = new Case("200", "Dell", "240", new Dimensions(20, 50, 100));
         Monitor monitor = new Monitor("300", "HP", 15, new Resolution(10, 10));
@@ -40,6 +24,32 @@ public class Main {
         thePC.getTheCase().pressPowerButton();
         thePC.getMotherboard().loadProgram("Windows");
         thePC.getMonitor().drawPixelAt(5,4,"White");
+        */
+
+
+        Car car = new Car("Car",200);
+        car.startEngine();
+        car.move();
+        car.accelerate();
+        car.brake();
+
+        System.out.println("\n");
+
+        Holden holden = new Holden("Holden", 300);
+        holden.startEngine();
+        holden.move();
+        holden.accelerate();
+        holden.accelerate(120);
+        holden.brake();
+
+        System.out.println("\n");
+
+        Kia kia = new Kia("Kia", 150);
+        kia.move();
+        kia.accelerate();
+
+
+
     }
 
 }
