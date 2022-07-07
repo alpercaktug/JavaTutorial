@@ -1,12 +1,13 @@
 # Java Tutorial
 
 
-- Object Oriented Programming Core Concepts
-
+**- Object Oriented Programming Core Concepts**
 - Inheritance
 - Encapsulation
 - Polymorphism
 - Abstraction
+
+<br/>
 
 - Methods
 - Method overloading
