@@ -1,6 +1,13 @@
 # Java Tutorial
 
 
+- Object Oriented Programming Core Concepts
+
+- Inheritance
+- Encapsulation
+- Polymorphism
+- Abstraction
+
 - Methods
 - Method overloading
 - Classes
@@ -10,6 +17,8 @@
 - Overriding
 - this vs super
 - static vs instance
+- Composition
+- Encapsulation
 
 
 
