@@ -1,4 +1,4 @@
-package com.alpercaktug.oop.exercise3;
+package com.alpercaktug.oop.composition;
 
 public class Monitor {
 

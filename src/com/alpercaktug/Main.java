@@ -4,11 +4,16 @@ import com.alpercaktug.oop.polymorphism.Car;
 import com.alpercaktug.oop.polymorphism.Holden;
 import com.alpercaktug.oop.polymorphism.Kia;
 
+import java.util.Scanner;
+
 public class Main {
 
-    public static void main(String[] args) {
 
-        /*
+
+}
+
+
+/*
 
         Outlander outlander = new Outlander(36);
         outlander.steer(45);
@@ -24,8 +29,6 @@ public class Main {
         thePC.getTheCase().pressPowerButton();
         thePC.getMotherboard().loadProgram("Windows");
         thePC.getMonitor().drawPixelAt(5,4,"White");
-        */
-
 
         Car car = new Car("Car",200);
         car.startEngine();
@@ -48,8 +51,4 @@ public class Main {
         kia.move();
         kia.accelerate();
 
-
-
-    }
-
-}
+         */
