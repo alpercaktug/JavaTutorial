@@ -1,4 +1,4 @@
-package com.alpercaktug.oop.exercise1;
+package com.alpercaktug.oop.constructor;
 
 public class Carpet {
 

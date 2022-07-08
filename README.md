@@ -20,6 +20,7 @@
 - static vs instance
 - Composition
 - Encapsulation
+- Polymorphism
 
 
 

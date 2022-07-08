@@ -1,4 +1,4 @@
-package com.alpercaktug.oop.exercise2;
+package com.alpercaktug.oop.inheritance.exercise;
 
 public class Vehicle {
 
