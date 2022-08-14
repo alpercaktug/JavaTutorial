@@ -16,11 +16,10 @@
 - Encapsulation (getter/setter)
 - Inheritance
 - Overriding
-- this vs super
-- static vs instance
 - Composition
 - Encapsulation
 - Polymorphism
+- Generic Class
 
 
 
